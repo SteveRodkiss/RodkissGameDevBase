@@ -183,7 +183,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b104687d9277e54598aeec129c3aa93, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -256,7 +256,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b104687d9277e54598aeec129c3aa93, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -329,7 +329,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b104687d9277e54598aeec129c3aa93, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -414,7 +414,7 @@ Rigidbody:
   m_GameObject: {fileID: 691759073}
   serializedVersion: 2
   m_Mass: 150
-  m_Drag: .899999976
+  m_Drag: .0500000007
   m_AngularDrag: .0500000007
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83b1671e05f2ef489ff575ee2f3103a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MotorPower: 600
+  MotorPower: 450
   RearWheel: {fileID: 705667188}
   FrontWheel: {fileID: 768962641}
   FrontWheelMesh: {fileID: 216647080}
@@ -574,8 +574,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: .5
   m_SuspensionSpring:
-    spring: 1500
-    damper: 400
+    spring: 2500
+    damper: 1000
     targetPosition: .5
   m_SuspensionDistance: .5
   m_ForceAppPointDistance: 0
@@ -632,8 +632,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: .5
   m_SuspensionSpring:
-    spring: 1500
-    damper: 400
+    spring: 2500
+    damper: 1000
     targetPosition: .5
   m_SuspensionDistance: .5
   m_ForceAppPointDistance: 0
@@ -753,7 +753,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b104687d9277e54598aeec129c3aa93, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -872,7 +872,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b104687d9277e54598aeec129c3aa93, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -991,7 +991,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b104687d9277e54598aeec129c3aa93, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -1064,7 +1064,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b104687d9277e54598aeec129c3aa93, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -1137,7 +1137,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b104687d9277e54598aeec129c3aa93, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1

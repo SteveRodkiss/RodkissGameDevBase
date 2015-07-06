@@ -38,17 +38,19 @@ public class BikeScript : MonoBehaviour
 	void DoInput()
 	{
 		float xin = Input.GetAxis("Horizontal");
+		//reset values
+		RearWheel.motorTorque = 0f;
 		if(xin > 0f)
 			RearWheel.motorTorque = xin * MotorPower;
 		if(xin <= 0f)
 		{
-			RearWheel.brakeTorque = -xin * MotorPower * 0.5f;
-			FrontWheel.brakeTorque = -xin * MotorPower * 0.25f;
+			RearWheel.brakeTorque = -xin * MotorPower * 2.5f;
+			FrontWheel.brakeTorque = -xin * MotorPower * 0.5f;
 		}
 		//apply rotation of rigidbody for control in air
 		if(!RearWheel.isGrounded && !FrontWheel.isGrounded)
 		{
-			GetComponent<Rigidbody>().AddTorque(-xin * MotorPower * 0.25f,0,0);
+			GetComponent<Rigidbody>().AddTorque(-xin * MotorPower * 0.5f,0,0);
 		}
 
 	}
