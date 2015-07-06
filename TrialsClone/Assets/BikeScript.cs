@@ -20,8 +20,7 @@ public class BikeScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		float torque = Input.GetAxis("Horizontal") * MotorPower;
-		RearWheel.motorTorque = torque;
+		DoInput();
 
 		ApplyVisualTransform(RearWheel,RearWheelMesh);
 		ApplyVisualTransform(FrontWheel,FrontWheelMesh);
@@ -34,6 +33,26 @@ public class BikeScript : MonoBehaviour
 		wc.GetWorldPose(out pos,out rot);
 		mesh.position = pos;
 		mesh.rotation = rot;
+	}
+
+	void DoInput()
+	{
+		float xin = Input.GetAxis("Horizontal");
+		//reset values
+		RearWheel.motorTorque = 0f;
+		if(xin > 0f)
+			RearWheel.motorTorque = xin * MotorPower;
+		if(xin <= 0f)
+		{
+			RearWheel.brakeTorque = -xin * MotorPower * 2.5f;
+			FrontWheel.brakeTorque = -xin * MotorPower * 0.5f;
+		}
+		//apply rotation of rigidbody for control in air
+		if(!RearWheel.isGrounded && !FrontWheel.isGrounded)
+		{
+			GetComponent<Rigidbody>().AddTorque(-xin * MotorPower * 0.5f,0,0);
+		}
+
 	}
 
 
